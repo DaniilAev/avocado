@@ -4,9 +4,8 @@
 #include <iomanip>
 #include <string>
 using namespace std;
-int main(int argc, char** argv){
+int main(){
     fstream file("C:\\avocado\\timeline.txt", ios::app);
-    string path = argv[0];
     if (!file){
         cout << "Unable to open the file.";
         return 1;
