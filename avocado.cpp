@@ -2,10 +2,11 @@
 #include <iostream>
 #include <chrono>
 #include <iomanip>
+#include <string>
 using namespace std;
-int main(){
-    fstream file("timeline.txt", ios::app);
-
+int main(int argc, char** argv){
+    fstream file("C:\\avocado\\timeline.txt", ios::app);
+    string path = argv[0];
     if (!file){
         cout << "Unable to open the file.";
         return 1;
